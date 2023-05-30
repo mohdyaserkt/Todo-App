@@ -19,7 +19,7 @@ function App() {
             {new Date().toLocaleDateString("en-US", { weekday: "long" })}
             🌝 ☕{" "}
           </h2>
-          Rect tutorialRect tutorial Rect tutorial
+          
         </div>
         <div className="input">
           <input
