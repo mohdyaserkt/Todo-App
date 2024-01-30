@@ -1,0 +1,42 @@
+.smallButton {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all 0.4s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--light_primary_color);
+    position: relative;
+    button {
+      cursor: pointer;
+      border: none;
+      background-color: transparent;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
+    svg {
+      color: var(--secondary_color);
+      font-size: 1rem;
+      transition: all 0.2s ease-in-out;
+    }
+    &:hover {
+      background-color: transparent;
+      transition: all 0.2s ease-in-out;
+    }
+    input {
+      display: none;
+    }
+  
+    label {
+      height: 100%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  

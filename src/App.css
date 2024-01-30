@@ -1,88 +1,30 @@
-* {
-  margin: 0;
-  padding: 0;
+@import "./themes.css";
+.App {
+    text-align: center;
+    min-height: 94vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 1vmin);
+    color: white;
+    background-color: var(--primary_color);
+    text-align: center;
+    .selectorsContainer {
+        position: fixed;
+        bottom: 0;
+        z-index: 3;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: var(--primary_color);
+        padding: 8px;
+    }
 }
 
-body {
-  background-color: #343434;
+p,
+input {
+    font-family: "PlaypenSans", "DigiSarvenaz" !important;
+    font-size: 1rem;
 }
-
-.app {
-  position: absolute;
-  top: 10%;
-  left: 50%;
-  transform: translate(-50%, -10%);
-}
-
-.app .mainHeading h1 {
-  text-align: center;
-}
-
-.app h1,
-h2 {
-  color: white;
-}
-
-.app .input {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.app .input {
-  margin-top: 0.8em;
-  width: 20em;
-  height: 2em;
-  background-color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-radius: 6px;
-  padding: 5px;
-}
-
-.app .input input {
-  width: 100%;
-  height: 1.6em;
-  border-color: transparent;
-  outline-color: transparent;
-}
-
-.app i {
-  cursor: pointer;
-  font-size: larger;
-  font-weight: 900;
-  color: grey;
-  margin-right: 5px;
-}
-.app .todos {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.app .todos .todo {
-  margin-top: 0.8em;
-  width: 20em;
-  height: 2em;
-  background-color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-radius: 6px;
-  padding: 5px;
-}
-.app .todos .todo .left {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.app .todos .todo .left p {
-  margin-left: 3px;
-  font-size: medium;
-  font-weight: 700;
-  font-style: normal;
-  color: grey;
-}
-

@@ -1,0 +1,163 @@
+.contentContainer {
+  min-width: 300px;
+  width: 70%;
+  max-width: 750px;
+  margin: auto;
+  z-index: 1;
+}
+
+.contentContainer form h1 {
+  color: var(--secondary_color);
+  font-size: 3rem;
+  margin: 1rem auto 2rem auto;
+  max-width: 60vw;
+  line-height: 70px;
+}
+
+@media screen and (max-width: 480px) {
+  .contentContainer form h1 {
+    font-size: 2.5rem;
+    max-width: 65vw;
+  }
+}
+
+.contentContainer form label {
+  display: flex;
+  position: relative;
+}
+
+.contentContainer form label input {
+  font-size: 1rem;
+  background-color: rgba(var(--primary_color), 0.25);
+  padding: 12px 48px 12px 16px;
+  border-radius: 6px;
+  width: 100%;
+  border: 1px solid var(--tertiary_color);
+  color: var(--tertiary_color);
+  box-shadow: 0 0 0 0 var(--tertiary_color);
+  font-family: "PlaypenSans";
+  transition: box-shadow 0.5s;
+}
+
+.contentContainer form label input:focus,
+.contentContainer form label input:hover {
+  box-shadow: 0 0 8px -2px var(--tertiary_color);
+  outline: none;
+  transition: box-shadow 0.2s;
+}
+
+.contentContainer form label::placeholder {
+  color: var(--tertiary_color);
+  opacity: 0.5;
+}
+
+.contentContainer form label button {
+  background-color: transparent;
+  color: var(--secondary_color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--secondary_color);
+  position: absolute;
+  right: 12px;
+  top: 10px;
+  cursor: pointer;
+  width: 28px;
+  height: 28px;
+  border-radius: 4px;
+  transition: all 0.5s;
+  outline: 1px solid transparent;
+}
+
+.contentContainer form label button svg {
+  font-size: 16px;
+}
+
+.contentContainer form label button:hover {
+  outline: 1px solid var(--secondary_color);
+  transition: all 0.2s;
+}
+
+.contentContainer .list {
+  display: flex;
+  flex-direction: column;
+  margin: 1.5rem auto 3.5rem auto;
+  gap: 1.4rem;
+}
+
+.farsiToDoListContainer {
+  direction: rtl;
+  font-family: "PlaypenSans", "DigiSarvenaz";
+}
+
+.farsiToDoListContainer form label input {
+  padding: 12px 12px 12px 48px !important;
+}
+
+.farsiToDoListContainer form label::placeholder {
+  color: var(--tertiary_color);
+  padding-right: 8px;
+}
+
+.farsiToDoListContainer form label button {
+  right: unset;
+  left: 12px;
+}
+
+.errorBox form label input {
+  border: 1px solid var(--error_color);
+  color: var(--tertiary_color);
+  box-shadow: 0 0 0 0 var(--error_color);
+  outline: 0 solid transparent;
+  transition: 0.2s all;
+}
+
+.errorBox form label input:focus,
+.errorBox form label input:hover {
+  box-shadow: none;
+  transition: 0.2s all;
+  outline: 1px solid var(--error_color);
+}
+
+.errorMessage {
+  position: absolute;
+  text-align: left;
+  font-size: 0.7rem;
+  padding-top: 2px;
+  color: var(--error_color);
+  transition: opacity 0.2s ease-in;
+}
+
+.showError {
+  opacity: 1;
+  transition: opacity 0.2s ease-in;
+}
+
+.hideError {
+  opacity: 0;
+  transition: opacity 0.2s ease-in;
+}
+
+.background {
+  width: 100%;
+  height: 102%;
+  z-index: 0;
+  position: absolute;
+  background-color: var(--primary_color);
+}
+
+.topBarContainer {
+  z-index: 5;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 12px;
+}
+
+.topBarContainer > div {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
